@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio_L2</title>
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css" />
+    <link rel="stylesheet"  href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#home">
+            <h2> Emir.Js </h2> 
+        </a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#service">service</a>
+            <a href="#testimonial">Projet</a>
+        </nav>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <section class="home" id="home">
+
+        <div class="box-container">
+
+            <div class="content">
+                <div class="text">
+                    <h2>Bonjour !</h1>
+                    <h1>Voici <span class="typing-text"></span></h1>
+                    <p>Mon Portfolio Cree En Vanilla Avec Html Css Js</p>
+                    <a href="#" class="btn"> A propos <i class="fas fa-user"></i></a>
+                </div>
+            </div>
+    
+            <div class="image">
+                <img src="assets/images/Home/Home-Image.png" alt="Home-Image">
+            </div>
+        </div>
+    </section>
+        <div class="skill-container">
+            <div class="heading">
+                <h2>my <span>skills</span></h2>
+            </div>
+            <div class="skills">
+                <div class="skill-item item1">
+                    <div class="box">
+                        <h3>HTML5<span> 90% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>CSS3<span> 85% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>javascript<span> 80% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+                <div class="skill-item item2">
+                    <div class="box">
+                        <h3>Python<span> 50% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Design<span> 85% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                    <div class="box">
+                        <h3>Bootstrap<span> 60% </span> </h3>
+                        <div class="progress-bar"> <span></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="service" id="service">
+        <div class="heading">
+            <h2>Mes <span>Competence</span></h2>
+        </div>
+        <div class="box-container">
+            <div class="service-item">
+                <i class="fas fa-code"></i>
+                <h3>web design</h3>
+                <p>Conception de designs front-end sur Figma et Photoshop, avec intégration habile dans les langages web</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>graphic design</h3>
+                <p>Je me spécialise dans la conception de prospectus, bannières, logos, et mockups UI/UX</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-camera"></i>
+                <h3>Animation</h3>
+                <p>animation 2.5D images statiques animées avec rigging et perspective pour live wallpapers et bannières</p>
+            </div>
+            <div class="service-item">
+                <i class="far fa-file-video"></i>
+                <h3>Framework</h3>
+                <p>Actuellement, je suis en train d'apprendre en autodidacte les frameworks de CSS et JS tels que Tailwind, React et Node.js</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial" id="testimonial">
+        <div class="heading">
+            <h2><span>Projet Personelle</span></h2>
+        </div>
+        <div class="swiper-container testimonial-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-1.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        Conception de prospectus de page et site web des produits dédiés aux
+                        bibliothèques - configuration de lecteurs RFID
+                        <a href="https://thinktech3666.000webhostapp.com/">
+                            <h2> Site_Test</h2> 
+                        </a>
+                    </p>
+                    <div class="intro">
+                        <h3>Think Tech</h3>
+                        <h5>web developer</h5>
+                    </div>
+                </div>
+                <div class="swiper-slide testi-item">
+                    <img src="assets/images/Testimonials/pic-2.png" alt="Testimonial-Pic" />
+
+                    <i class="fas fa-quote-left"></i>
+
+                    <p class="comment">
+                        développeur Front End (sous html css javascript) et
+                        graphique et motion designer (animation en 2d /2.5d)
+                        <a href="https://www.fiverr.com/e1lusion?up_rollout=true">
+                            <h2> Fiverr</h2> 
+                        </a>
+                    </p>
+
+                    <div class="intro">
+                        <h3>Fiverr Upwork</h3>
+                        <h5>freelancer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="assets/lib/typed/typed.js"></script>
+    <!-- Typed Script -->
+    <script>
+        let typed = new Typed('.typing-text', {
+
+            strings: [ 'Front Dev', 'Freelancer', 'graphic designer'],
+            typeSpeed: 120,
+            loop: true
+        });
+    </script>
+
+  </body>
+</html>
